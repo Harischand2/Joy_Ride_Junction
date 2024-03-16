@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Joy_Ride_Junction/static/css/main.821b9754.css",
-    "main.js": "/Joy_Ride_Junction/static/js/main.f93c9c58.js",
+    "main.js": "/Joy_Ride_Junction/static/js/main.2bb20a84.js",
     "static/js/453.62efe6f6.chunk.js": "/Joy_Ride_Junction/static/js/453.62efe6f6.chunk.js",
     "static/media/calm_relax.jpeg": "/Joy_Ride_Junction/static/media/calm_relax.91828fa6ed0f7d7e6955.jpeg",
     "static/media/joy.jpeg": "/Joy_Ride_Junction/static/media/joy.26c63e2852559f01882b.jpeg",
@@ -14,11 +14,11 @@
     "static/media/Home_Image.jpeg": "/Joy_Ride_Junction/static/media/Home_Image.266fc865bdf5c5a7b011.jpeg",
     "index.html": "/Joy_Ride_Junction/index.html",
     "main.821b9754.css.map": "/Joy_Ride_Junction/static/css/main.821b9754.css.map",
-    "main.f93c9c58.js.map": "/Joy_Ride_Junction/static/js/main.f93c9c58.js.map",
+    "main.2bb20a84.js.map": "/Joy_Ride_Junction/static/js/main.2bb20a84.js.map",
     "453.62efe6f6.chunk.js.map": "/Joy_Ride_Junction/static/js/453.62efe6f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.821b9754.css",
-    "static/js/main.f93c9c58.js"
+    "static/js/main.2bb20a84.js"
   ]
 }
