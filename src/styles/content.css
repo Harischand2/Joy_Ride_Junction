@@ -1,0 +1,56 @@
+.y_matter, .a_steps, .quote{
+    padding : 25px;
+    margin: 0px 50px 50px 50px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(29, 29, 30, 0.995);
+    border: 1px rgba(255, 255, 255, 0.65) solid;
+    border-radius: 10px;
+}
+
+.h_title{
+    margin-top: 10px;
+    color: brown
+}
+
+.y_matter h3, .a_steps h3, .quote h3, .h_title{
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+.quote .q_{
+    margin-left: 10px;
+    font-family: "Karla", sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+.quote{
+    position: relative;
+}
+.img_q{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    box-shadow: 0 0 5px rgba(29, 29, 30, 0.995);
+    padding: 10px;
+    background-color: white;
+}
+
+
+.author{
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(29, 29, 30, 0.995);
+  color: rgb(30, 159, 75);
+  right: -12px;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+.p_m, .s_a{
+    font-size: 16px;
+}

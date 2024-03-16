@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+}
+body{
+  height: 100vh;
+  background-color:rgba(248, 244, 244, 0.7)
+}
+.navbar{
+  background-color: white;
+}
+.navbar-nav .nav-link{
+ font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+  color: brown;
+  text-decoration: underline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.home{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./Images/Home_Image.jpeg");
+  color: rgb(253, 255, 254);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.home_row h1{
+  font-family: "Roboto Slab", serif;
+  font-size: 80px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* logo at the top of the page */
+.mental_logo img{
+  width: 80px ;
+  height: 50px;
+}
+/* get started btn */
+.getstarted_btn{
+
+  margin-top: 20px;
+  color: brown;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+.getstarted_btn:hover{
   color: white;
+  background-color: brown;
+}
+.mood_header{
+  font-family: "Roboto Slab", serif;
+  margin-top: 20px;
+  color: brown;
+  font-weight: bolder;
+
+}
+.box{
+  border-radius: 10px;
+  height: auto;
+  margin-right: 30px;
+  padding: 20px 10px;
+  background-color: rgba(248, 244, 244, 0.7);
+  box-shadow: 0 0 10px rgba(29, 29, 30, 0.995);
+  margin-bottom: 10px;
+}
+.title p{
+ font-size: 20px;
+ font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.summary{
+  margin-top: 0px;
+  font-size: 13px;
+  color: black;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selectMood{
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 3px 30px;
+  background-color: white;
+  color: brown;
+  border: 1px solid lightgray;
+}
+.selectMood:hover{
+  color: white;
+  background-color: brown;
+
+}
+.mood_container{ 
+
+  background-color:rgba(248, 244, 244, 0.7)
 }
