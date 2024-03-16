@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Harischand2/Joy_Ride_Junction/static/css/main.76d37001.css",
+    "main.js": "/Harischand2/Joy_Ride_Junction/static/js/main.ec85ca6b.js",
+    "static/js/453.62efe6f6.chunk.js": "/Harischand2/Joy_Ride_Junction/static/js/453.62efe6f6.chunk.js",
+    "static/media/calm_relax.jpeg": "/Harischand2/Joy_Ride_Junction/static/media/calm_relax.91828fa6ed0f7d7e6955.jpeg",
+    "static/media/joy.jpeg": "/Harischand2/Joy_Ride_Junction/static/media/joy.26c63e2852559f01882b.jpeg",
+    "static/media/exploration.jpeg": "/Harischand2/Joy_Ride_Junction/static/media/exploration.1754d33372bee532aa33.jpeg",
+    "static/media/Quote.png": "/Harischand2/Joy_Ride_Junction/static/media/Quote.e2bc3864fd3df56733ad.png",
+    "static/media/motivational.jpeg": "/Harischand2/Joy_Ride_Junction/static/media/motivational.c540d17116ce000029b9.jpeg",
+    "static/media/reflective.jpg_large": "/Harischand2/Joy_Ride_Junction/static/media/reflective.6728bdf291d20812440c.jpg_large",
+    "static/media/silly.jpeg": "/Harischand2/Joy_Ride_Junction/static/media/silly.9b5b827a64a742d53f7d.jpeg",
+    "static/media/logo.jpg": "/Harischand2/Joy_Ride_Junction/static/media/logo.00f8599904ef40075192.jpg",
+    "static/media/Home_Image.jpeg": "/Harischand2/Joy_Ride_Junction/static/media/Home_Image.266fc865bdf5c5a7b011.jpeg",
+    "index.html": "/Harischand2/Joy_Ride_Junction/index.html",
+    "main.76d37001.css.map": "/Harischand2/Joy_Ride_Junction/static/css/main.76d37001.css.map",
+    "main.ec85ca6b.js.map": "/Harischand2/Joy_Ride_Junction/static/js/main.ec85ca6b.js.map",
+    "453.62efe6f6.chunk.js.map": "/Harischand2/Joy_Ride_Junction/static/js/453.62efe6f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76d37001.css",
+    "static/js/main.ec85ca6b.js"
+  ]
+}
