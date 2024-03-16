@@ -14,7 +14,7 @@ function Info({ accessToken }) {
   const [play, setPlay] = useState(false);
   const params = useParams();
   const params_id = params.id;
-  console.log("id = ", params_id);
+
   const getProfile = async () => {
     const response = await axios.get(
       "https://api.spotify.com/v1/me/playlists",
@@ -33,9 +33,9 @@ function Info({ accessToken }) {
 
   useEffect(() => {
     if (playlists) {
-      console.log("accessToken = ", accessToken);
+   
       const playlistId = playlists[params_id - 1].id;
-      console.log("playlistId = ", playlistId);
+  
 
       const getTracks = async () => {
         try {
@@ -47,7 +47,7 @@ function Info({ accessToken }) {
               },
             }
           );
-          console.log("response = ", response.data.items);
+    
           setTracks(response.data.items);
           // Handle response.data.items, for example, set it to state
         } catch (error) {
@@ -61,7 +61,7 @@ function Info({ accessToken }) {
   }, [accessToken, playlists, params_id]);
   let track_uri = null;
   if (tracks) {
-    console.log("Uri : ", tracks[0].track.uri);
+
     track_uri = tracks[0].track.uri;
   }
 
