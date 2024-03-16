@@ -17,7 +17,7 @@ const Authentication=({code, setAccessToken}) => {
     const data = {
       grant_type: 'authorization_code',
       code: code,
-      redirect_uri: 'http://localhost:3000'
+      redirect_uri: 'https://harischand2.github.io/Joy_Ride_Junction/'
     };
   
     try {  const authString = btoa(`${clientId}:${clientSecret}`);
