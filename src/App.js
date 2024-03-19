@@ -17,9 +17,8 @@ function App() {
   const code = new URLSearchParams(window.location.search).get("code");
   console.log("render");
   const [accessToken, setAccessToken] = useState("");
-if(code){
+
   window.location.hash = "";
-}
 
   return (!code)? (<Login/>) :(
     <BrowserRouter>
