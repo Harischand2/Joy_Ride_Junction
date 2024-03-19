@@ -1,4 +1,4 @@
-import React from "react";
+
 import Entry from "../components/Entry";
 import Mood_list from "../components/Mood_list";
 import Footer from "../components/Footer";

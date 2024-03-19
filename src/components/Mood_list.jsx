@@ -1,4 +1,4 @@
-import React from 'react';
+
 import joy from '../Images/joy.jpeg';
 import calm from '../Images/calm_relax.jpeg';
 import motivational from '../Images/motivational.jpeg';
