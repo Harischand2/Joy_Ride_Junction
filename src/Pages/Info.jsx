@@ -18,19 +18,6 @@ function Info({ accessToken }) {
   const params_id = params.id;
 
 
-  // const getProfile = async () => {
-  //   const response = await axios.get(
-  //     "https://api.spotify.com/v1/me/playlists",
-  //     {
-  //       headers: {
-  //         Authorization: `Bearer ${accessToken}`,
-  //       },
-  //     }
-  //   );
-  //   setPlaylists(response.data.items);
-  //   console.log(response.data.items);
-  //   return response.data.items;
-  // };
   useEffect(() => {
     setPlaylists(Mood_list[params_id-1]['playlist_id'])
   }, [playlists, params_id, accessToken]);
@@ -47,7 +34,7 @@ function Info({ accessToken }) {
           const response = await axios.get(
             `https://api.spotify.com/v1/playlists/${playlists}/tracks?limit=20`,
             {
-              headers: {
+              header: {
                 Authorization: `Bearer ${accessToken}`,
               },
             }
