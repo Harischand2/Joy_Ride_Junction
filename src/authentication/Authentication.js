@@ -17,7 +17,7 @@ const Authentication=({code, setAccessToken}) => {
     const data = {
       grant_type: 'authorization_code',
       code: code,
-      redirect_uri: 'http://localhost:3000'
+      redirect_uri: 'https://joy-ride-junction.vercel.app/'
     };
   
     try {  

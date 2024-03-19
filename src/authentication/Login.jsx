@@ -4,7 +4,7 @@ import '../styles/Login.css';
 
 const authEndpoint = 'https://accounts.spotify.com/authorize?';
 const clientId = 'ef14b335fecf485dafeb34b34918c1b8';
-const redirectUri = 'http://localhost:3000';
+const redirectUri = 'https://joy-ride-junction.vercel.app/';
 const scope = ['streaming', 'user-library-read', 'playlist-read-private', 'user-read-playback-state', 
 'user-modify-playback-state', 'user-read-email', 'user-read-private', 'user-library-modify'];
 const loginEndpoint= `${authEndpoint}client_id=${clientId}&response_type=code
