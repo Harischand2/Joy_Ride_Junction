@@ -17,11 +17,11 @@ const Authentication=({code, setAccessToken}) => {
     const data = {
       grant_type: 'authorization_code',
       code: code,
-      redirect_uri: 'https://harischand2.github.io/Joy_Ride_Junction/'
+      redirect_uri: 'http://localhost:3000'
     };
   
-    try {  const authString = btoa(`${clientId}:${clientSecret}`);
-    headers['Authorization'] = `Basic ${authString}`;
+    try {  
+
       const response_ac = await axios.post(
         'https://accounts.spotify.com/api/token',
         qs.stringify(data),

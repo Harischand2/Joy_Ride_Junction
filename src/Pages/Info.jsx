@@ -5,42 +5,47 @@ import "../styles/Info.css";
 import SpotifyPlayer from "react-spotify-web-playback";
 import Content from "../components/Content";
 import Footer from "../components/Footer.jsx";
-
+import Mood_list from "../components/Mood_list.jsx";
 import { useParams } from "react-router-dom";
 
 function Info({ accessToken }) {
   const [playlists, setPlaylists] = useState(null);
   const [tracks, setTracks] = useState(null);
+  // const [tracks_uri, setTracksURI] = useState( tracks[0].track.uri);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [play, setPlay] = useState(false);
   const params = useParams();
   const params_id = params.id;
 
-  const getProfile = async () => {
-    const response = await axios.get(
-      "https://api.spotify.com/v1/me/playlists",
-      {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-        },
-      }
-    );
-    setPlaylists(response.data.items);
-    return response.data.items;
-  };
+
+  // const getProfile = async () => {
+  //   const response = await axios.get(
+  //     "https://api.spotify.com/v1/me/playlists",
+  //     {
+  //       headers: {
+  //         Authorization: `Bearer ${accessToken}`,
+  //       },
+  //     }
+  //   );
+  //   setPlaylists(response.data.items);
+  //   console.log(response.data.items);
+  //   return response.data.items;
+  // };
   useEffect(() => {
-    getProfile();
-  }, [accessToken]);
+    setPlaylists(Mood_list[params_id-1]['playlist_id'])
+  }, [playlists, params_id, accessToken]);
+  
+ 
+  console.log("Mood list ", playlists);
 
   useEffect(() => {
     if (playlists) {
-   
-      const playlistId = playlists[params_id - 1].id;
   
-
+      // const playlistId = playlists[params_id - 1].id;
       const getTracks = async () => {
         try {
           const response = await axios.get(
-            `https://api.spotify.com/v1/playlists/${playlistId}/tracks?limit=20`,
+            `https://api.spotify.com/v1/playlists/${playlists}/tracks?limit=20`,
             {
               headers: {
                 Authorization: `Bearer ${accessToken}`,
@@ -58,16 +63,19 @@ function Info({ accessToken }) {
 
       getTracks();
     }
-  }, [accessToken, playlists, params_id]);
-  let track_uri = null;
-  if (tracks) {
+  }, [accessToken, playlists]);
 
-    track_uri = tracks[0].track.uri;
+  let track_uri = null;
+  let track_id = null;
+  if (tracks) {
+    track_uri = tracks[currentIndex].track.uri;
+    track_id = tracks[currentIndex].track.id;
+    // console.log("tracks  ",  )
   }
 
   useEffect(() => setPlay(true), [track_uri]);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+
   function handleNextTrack() {
     if (currentIndex < tracks.length - 1) {
       setCurrentIndex(currentIndex + 1);
@@ -78,6 +86,68 @@ function Info({ accessToken }) {
       setCurrentIndex(currentIndex - 1);
     }
   }
+
+
+  const saveTrack = async () => {
+    // const clientId = process.env.REACT_APP_BASIC_CLIENT_ID;
+    // const clientSecret = process.env.REACT_APP_BASIC_CLIENT_SECRET;
+    const headers = {
+      headers: {
+          Authorization: `Bearer ${accessToken}`,
+          'Content-Type' : 'application/json',
+      }
+    };
+    const data={
+      ids:[`${track_id}`]
+    }
+
+    try {  
+      // console.log("In access", accessToken===localStorage.getItem["accessToken"])
+      console.log(" track_id ", track_id)
+      console.log("access_token ", accessToken)
+      await axios.put(
+        `https://api.spotify.com/v1/me/tracks`,
+        data,
+        headers
+      );
+      // console.log("my data "  + JSON.stringify(response.data));
+      // return response;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+
+
+
+
+  const deleteTrack = async () => {
+
+    try {  
+      console.log(" track_id ", track_id)
+      console.log("access_token ", accessToken)
+      await axios.delete(
+        `https://api.spotify.com/v1/me/tracks`,
+        {
+          data:{
+            ids: [track_id]
+        }, 
+        headers: {
+          //   Accept: 'application/json',
+           'Content-Type' : 'application/json',
+            Authorization: `Bearer ${accessToken}`,
+        }
+
+        }
+
+      );
+      // console.log("my data "  + JSON.stringify(response.data));
+      // return response;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  // console.log("data id = ", data.ids)
 
   return tracks ? (
     <div className="container-fluid info_container">
@@ -106,7 +176,7 @@ function Info({ accessToken }) {
                 }}
               />
             </div>
-            <div className="col-6 text-center">
+            <div className="col-12 col-sm-3 text-center">
               <button
                 onClick={handlePreviousTrack}
                 type="submit"
@@ -115,13 +185,31 @@ function Info({ accessToken }) {
                 Previous Track
               </button>
             </div>
-            <div className="col-6 text-center">
+            <div className="col-12 col-sm-3 text-center">
               <button
                 onClick={handleNextTrack}
                 type="submit"
                 className="btn getstarted_btn"
               >
                 Next Track
+              </button>
+            </div>
+            <div className="col-12 col-sm-3 text-center">
+              <button
+                onClick={saveTrack}
+                type="submit"
+                className="btn getstarted_btn"
+              >
+                 Save Track
+              </button>
+            </div>
+            <div className="col-12 col-sm-3 text-center">
+              <button
+                onClick={deleteTrack}
+                type="submit"
+                className="btn getstarted_btn"
+              >
+                 Delete Track
               </button>
             </div>
           </div>

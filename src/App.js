@@ -4,10 +4,8 @@ import Mood from "./Pages/Mood.jsx";
 import Info from "./Pages/Info.jsx";
 import Nav from "./components/Nav.jsx";
 import Login from "./authentication/Login.jsx";
-
-import axios from "axios";
 import './App.css';
-import qs from "qs";
+
 
 
 import { BrowserRouter, Routes, Route} from "react-router-dom";
@@ -19,6 +17,7 @@ function App() {
   const code = new URLSearchParams(window.location.search).get("code");
   console.log("render");
   const [accessToken, setAccessToken] = useState("");
+
 
   return (!code)? (<Login/>) :(
     <BrowserRouter>

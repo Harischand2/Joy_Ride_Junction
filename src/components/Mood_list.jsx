@@ -8,6 +8,7 @@ import silly from '../Images/silly.jpeg';
 const mood_list=[
     {
         "id": 1,
+        'playlist_id': "54iUFD6rprvpoE3wVnSgU2",
         "title": "Joyful Vibes",
         "image": joy,
         "summary": "A lively and energetic mood with upbeat music playlists, inspirational quotes, and fun activities.",
@@ -24,6 +25,7 @@ const mood_list=[
     },
     {
         "id": 2,
+        'playlist_id': "576cfnAEhdR7uhKeM1wwUE",
         "title": "Calm and Relaxation",
         "image": calm,
         "summary": "Featuring soothing music, calming quotes, and meditation resources to help users unwind and relax.",
@@ -40,6 +42,7 @@ const mood_list=[
     },
     {
         "id": 3,
+        'playlist_id': "3ybnF1ZkG9Y2LZhr15eFQi",
         "title": "Motivational Boost",
         "image": motivational,
         "summary": "A lively and energetic mood with upbeat music playlists, inspirational quotes, and fun activities.",
@@ -56,6 +59,7 @@ const mood_list=[
     },
     {
         "id": 4,
+        'playlist_id': "37i9dQZF1EIeEZPgsd7pko",
         "title": "Energetic Exploration",
         "image": energetic,
         "summary": "Encouraging exploration and adventure with lively music, adventurous quotes, and resources for staying active.",
@@ -73,6 +77,7 @@ const mood_list=[
     },
     {
         "id": 5,
+        'playlist_id': "7EaeguQy78c57ZvlQSG7kX" ,
         "title": "Reflective Moments",
         "image": reflective,
         "summary": "Offering introspective music, thoughtful quotes, and meditation exercises for moments of self-reflection.",
@@ -89,6 +94,7 @@ const mood_list=[
     },
     {
         "id": 6,
+        'playlist_id': "37i9dQZF1EIeNJxEHJdFNK" ,
         "title": "Playful and Silly",
         "image": silly,
         "summary": "Creating a light-hearted atmosphere with playful tunes, funny quotes, and entertaining activities.",
