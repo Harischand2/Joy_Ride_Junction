@@ -1,7 +1,6 @@
 import React from "react";
 import GreetingList from "../components/GreetingList";
 import GetStarted  from "../components/HomeBTN"; 
-import Footer from "../components/Footer";
 
 function Home() {
   return (
