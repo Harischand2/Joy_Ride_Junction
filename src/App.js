@@ -18,7 +18,7 @@ function App() {
   console.log("render");
   const [accessToken, setAccessToken] = useState("");
 
-   window.location.hash = " ";
+  
 
   return (!code)? (<Login/>) :(
     <BrowserRouter>
