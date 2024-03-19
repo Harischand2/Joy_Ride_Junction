@@ -34,8 +34,8 @@ function Info({ accessToken }) {
           const response = await axios.get(
             `https://api.spotify.com/v1/playlists/${playlists}/tracks?limit=20`,
             {
-              header: {
-                Authorization: `Bearer ${accessToken}`,
+              headers: {
+                Authorization: `Bearer ${accessToken}`
               },
             }
           );
