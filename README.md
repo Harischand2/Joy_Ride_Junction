@@ -1,190 +1,66 @@
-# Getting Started with Create React App
+# <center>Joy-Ride-Junction</center>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://joy-ride-junction.vercel.app/"><b>Explore Joy Ride Junction</b></a><br>
+  <img src="https://img.shields.io/github/license/Harischand2/Joy_Ride_Junction" alt="GitHub License">
+  <img src="https://img.shields.io/github/stars/Harischand2/Joy_Ride_Junction" alt="GitHub Repo stars">
+</p>
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Demo
+![Demo](Demo_JJF.gif)
 
 
+## Description
+This is a mental health application which has a nature-themed design to foster user engagement. It implements a one time secure user authorization system via the Spotify API, and optimizes accessibility for uninterrupted exploration of diverse moods, accompanied by curated playlists from Spotify and steps to achieve each mood, complemented by relevant quotes.
+## Challenge 
+* Implementing secure user authorization is crucial for protecting user data and ensuring the integrity of your application. However, integrating authentication mechanisms can be complex, especially when dealing with third-party services like the Spotify API.
+## Solution
+#### Here's how it works:
+
+* One-Time User Authorization: Users are directed to the Spotify authentication page, where they grant permission for our application to access their Spotify account.
+
+* Secure Token Exchange: Once the user grants permission, Spotify redirects them back to our application with an authorization code.
+
+* Token Retrieval: We then exchange this authorization code for access and refresh tokens and the expire time from the Spotify API. These tokens act as credentials to access the user's data on behalf of the user. The expire time allows us to determine when to send a request to Spotify to refesh our token.
+
+* Token Management: We store these tokens securely in local storage, ensuring they are protected from unauthorized access. Additionally, we implement mechanisms to handle token expiration gracefully, refreshing tokens when necessary to maintain uninterrupted access to the Spotify API.
+
+## Tech Stack
+
+[![My Skills](https://skillicons.dev/icons?i=html,css,react,js,bootstrap)](https://skillicons.dev)
 
 
+## Getting Started
+### Prerequistes
+* Need to create a [Spotify APP](https://developer.spotify.com/documentation/web-api/concepts/apps) to get your client ID and client Secret which you will use when making request to spotify web api.
 
-  // const requestAccessToken = async () => {
-  //   const clientId = process.env.REACT_APP_BASIC_CLIENT_ID;
-  //   const clientSecret = process.env.REACT_APP_BASIC_CLIENT_SECRET;
-  //   const headers = {
-  //     headers: {
-  //       Accept: 'application/json',
-  //       'Content-Type': 'application/x-www-form-urlencoded',
-  //        Authorization: `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
-  //     }
-  //   };
-  //   const data = {
-  //     grant_type: 'authorization_code',
-  //     code: code,
-  //     redirect_uri: 'http://localhost:3000'
-  //   };
-  
-  //   try {  const authString = btoa(`${clientId}:${clientSecret}`);
-  //   headers['Authorization'] = `Basic ${authString}`;
-  //     const response_ac = await axios.post(
-  //       'https://accounts.spotify.com/api/token',
-  //       qs.stringify(data),
-  //       headers
-  //     );
-  //     // console.log("my data "  + JSON.stringify(response.data));
-  //     return response_ac;
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+### 1. Clone the repository
+```shell
+git clone https://github.com/Harischand2/Joy_Ride_Junction.git
+cd joy-ride-junction
+```
+### 2. Install npm dependencies
+```shell
+npm install
+```
+### 3. Copy the environment variables to .env and change the values
+```shell
+cp .env.example .env
+```
+### 4. Start your App
+```shell
+npm start
+```
+### 5. Open the app in your browser
+* Visit http://localhost:3000 in your browser.
 
-  //  Refresh the access token
+## Author
+### Adrian Harischand
+
+[![My Skills](https://skillicons.dev/icons?i=github)](https://github.com/Harischand2)
+[![My Skills](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/adrian-harischand-94b803236/)
 
 
-
-  // const RefreshToken = async () => {
-  //   const refreshToken = localStorage.getItem("refreshToken");
-  //   const clientId = process.env.REACT_APP_BASIC_CLIENT_ID;
-  //   const clientSecret = process.env.REACT_APP_BASIC_CLIENT_SECRET;
-  //   const headers = {
-  //     headers:{
-  //        Accept: 'application/json',
-  //       'Content-Type': 'application/x-www-form-urlencoded',
-  //        Authorization: `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
-  //     }
-  //   };
-  //   const data = {
-  //     grant_type: 'refresh_token',
-  //     refresh_token: refreshToken,
-  //     client_id: clientId,
-  //   };
-
-  //   try{
-  //     const response = await axios.post(
-  //       'https://accounts.spotify.com/api/token',
-  //       qs.stringify(data),
-  //       headers
-  //     );
-  //     console.log("Refresh...  "  + JSON.stringify(response.data));
-  //     return response;
-  //   }
-  //   catch(error){
-  //     console.log(error);
-  //   }
-
-  // };
-
-  // useEffect(() => {
-
-  //    if(code){
-  //     const checkAuth = async () => {
-  //       const storedAccessToken = localStorage.getItem("accessToken");
-  //       if (!storedAccessToken){
-  //         const response_a= await requestAccessToken();
-  //         console.log("this is access_token" , response_a.data.access_token);
-  //         const date = new Date().getTime();
-  //         localStorage.setItem("accessToken", response_a.data.access_token);
-  //         localStorage.setItem("refreshToken", response_a.data.refresh_token);
-  //         // temp val , actual val = date+response_a.data.expires_in*1000;
-  //         console.log("time: " , date);
-  //         localStorage.setItem("expiresIn", date +1000);
-  //         setAccessToken(response_a.data.access_token);
-  //         console.log("Im here");
-  //       }
-  //       else{
-  //         // we have a valid access token
-  //         console.log("refreshinh...");
-  //         const refresh_date = new Date().getTime();
-  //         const compare_date = refresh_date;
-  //         const storedExpiresIn = localStorage.getItem("expiresIn");
-  //         if( compare_date >= storedExpiresIn){
-  //           console.log("Refreshing tokens");
-  //           const res = await RefreshToken();
-  //           localStorage.setItem("accessToken", res.data.access_token);
-  //           // no need to store the refresh token as it is being reused
-  //           localStorage.setItem("expiresIn",refresh_date + 1000);
-  //           setAccessToken(res.data.access_token);
-  //         }
-
-  //       }
-  //     }
-  //     checkAuth();
-  //    }
-     
-  //   }, []);
-
-
-  
-
-
-
-  
-
-
-  // console.log("our code " + code);
-  // const accessToken = Auth_(code);
+## License
+* Copyright @ 2014 <b>Adrian Harischand</b> <br>
+ <img src="https://img.shields.io/github/license/Harischand2/Joy_Ride_Junction" alt="GitHub License">
