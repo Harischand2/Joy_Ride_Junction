@@ -1,7 +1,7 @@
 # Joy-Ride-Junction
 
 ### [Explore Joy Ride Junction](https://joy-ride-junction.vercel.app/)
-  <img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="GitHub License">
+[GitHub License](img.shields.io/badge/license-MIT-blue.svg)
   <img src="https://img.shields.io/github/stars/Harischand2/Joy_Ride_Junction" alt="GitHub Repo stars">
 
 
