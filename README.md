@@ -1,4 +1,4 @@
-# <center>Joy-Ride-Junction</center>
+# <center> Joy-Ride-Junction </center>
 
 <p align="center">
   <a href="https://joy-ride-junction.vercel.app/"><b>Explore Joy Ride Junction</b></a><br>
