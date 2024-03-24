@@ -2,7 +2,7 @@
 
 ### [Explore Joy Ride Junction](https://joy-ride-junction.vercel.app/)
 <p align="center">
-  <img src="https://img.shields.io/github/license/Harischand2/Joy_Ride_Junction" alt="GitHub License">
+  <img src="https://img.shields.io/badge/license-AGPLv3-purple" alt="GitHub License">
   <img src="https://img.shields.io/github/stars/Harischand2/Joy_Ride_Junction" alt="GitHub Repo stars">
 </p>
 
