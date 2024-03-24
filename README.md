@@ -63,4 +63,4 @@ npm start
 
 ## License
 * Copyright @ 2014 <b>Adrian Harischand</b> <br>
- <img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="GitHub License">
+ <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="GitHub License">
