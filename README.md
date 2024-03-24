@@ -1,9 +1,10 @@
 # Joy-Ride-Junction
 
 ### [Explore Joy Ride Junction](https://joy-ride-junction.vercel.app/)
-    ![GitHub License](https://img.shields.io/github/license/Harischand2/Joy_Ride_Junction)
-    ![GitHub Repo stars](https://img.shields.io/github/stars/Harischand2/Joy_Ride_Junction)<br>
-
+<p align="center">
+  <img src="https://img.shields.io/github/license/Harischand2/Joy_Ride_Junction" alt="GitHub License">
+  <img src="https://img.shields.io/github/stars/Harischand2/Joy_Ride_Junction" alt="GitHub Repo stars">
+</p>
 
 ## Demo
 ![Demo](Demo_JJF.gif)
