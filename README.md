@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://joy-ride-junction.vercel.app/"><b>Explore Joy Ride Junction</b></a><br>
-  <img src="https://img.shields.io/github/license/Harischand2/Joy_Ride_Junction" alt="GitHub License">
+  <img src="https://img.shields.io/badge/license-MIT" alt="GitHub License">
   <img src="https://img.shields.io/github/stars/Harischand2/Joy_Ride_Junction" alt="GitHub Repo stars">
 </p>
 
